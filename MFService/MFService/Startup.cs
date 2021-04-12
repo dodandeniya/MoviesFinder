@@ -1,5 +1,6 @@
 using MF.Infrastructure;
 using MF.Infrastructure.Middlewares;
+using MFService.MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,7 @@ namespace MFService
             services.AddControllers();
             services.AddSwaggerDocument();
             services.AddInfraConfigurations(Configuration);
+            services.AddMediatRConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
