@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { IMovie } from '../interfaces/movie';
@@ -9,7 +8,7 @@ import { IMovie } from '../interfaces/movie';
   providedIn: 'root',
 })
 export class MovieService {
-  private movieUrl = environment.movieApiUrl;
+  private movieUrl = 'api/Movie/Search';
 
   constructor(private http: HttpClient) {}
 

@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-  movieApiUrl: 'api/Movie/GetList', // URL to web api
 };
 
 /*
