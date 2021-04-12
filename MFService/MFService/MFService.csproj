@@ -4,5 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MF.Application\MF.Application.csproj" />
+    <ProjectReference Include="..\MF.Infrastructure\MF.Infrastructure.csproj" />
+  </ItemGroup>
+
 
 </Project>
