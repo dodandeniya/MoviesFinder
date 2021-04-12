@@ -1,0 +1,35 @@
+<div *ngIf="movie">
+    <mat-card class="mat-elevation-z4">
+        
+        <div fxLayout="row wrap">
+          <div fxFlex="100%" style="margin-bottom: 10px;">
+            <mat-card-header>
+              <mat-card-title>{{movie.title}}</mat-card-title>
+            </mat-card-header>    
+          </div>
+          <div fxFlex="40">
+            <img mat-card-image src="{{movie.poster}}" alt="{{movie.title}}">
+          </div>
+          <div fxFlex style="margin-left: 30px;">
+            <mat-card-content>
+              <strong>Year</strong>
+              <p>
+                {{movie.year}}
+              </p>
+              <strong>Director</strong>
+              <p>
+                {{movie.director}}
+              </p>
+              <strong>Rotten Tomatoes Rating</strong>
+              <p>
+                {{movie.rtRating}}
+              </p>
+              <strong>Plot</strong>
+              <p>
+                {{movie.plot}}
+              </p>
+            </mat-card-content>
+          </div>
+        </div>
+    </mat-card>
+</div>
